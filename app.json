@@ -21,6 +21,7 @@
     "assetBundlePatterns": [
       "**/*"
     ],
+    "userInterfaceStyle": "automatic",
     "android": {
       "package": "com.tubbycatgames.reactional",
       "versionCode": 1

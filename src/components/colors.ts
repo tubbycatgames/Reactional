@@ -1,30 +1,27 @@
-import { StyleSheet } from 'react-native';
+import { StyleSheet } from 'react-native'
 
 const styles = StyleSheet.create({
   darkBackground: {
-    backgroundColor: '#FFF',
-  },
-  darkTextPrimary: {
-    color: '#000',
-  },
-  lightBackground: {
     backgroundColor: '#000',
   },
-  lightTextPrimary: {
+  darkTextPrimary: {
     color: '#FFF',
+  },
+  lightBackground: {
+    backgroundColor: '#FFF',
+  },
+  lightTextPrimary: {
+    color: '#000',
   },
 })
 
 const getSchemeStyle = (dark: any, light: any) => {
-  return (scheme: string) => 
-  {
-    return scheme === 'dark' ? dark : light;
-  }
+  return (scheme: string) => scheme === 'dark' ? dark : light
 }
 
 export const getBackgroundStyle = getSchemeStyle(
-  styles.lightBackground, 
-  styles.darkBackground
+  styles.darkBackground,
+  styles.lightBackground
 )
     
 export const getPrimaryTextStyle = getSchemeStyle(
