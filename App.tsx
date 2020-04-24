@@ -1,14 +1,13 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
-export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Reactional!</Text>
-      <Text>An accessible, open-source game about reactions</Text>
-    </View>
-  );
-}
+export default () => (
+  <View style={styles.container}>
+    <Text>Reactional!</Text>
+    <Text>An accessible, open-source game about reactions</Text>
+    <Text>Meant for learning, guiding, and enjoyment</Text>
+  </View>
+);
 
 const styles = StyleSheet.create({
   container: {
