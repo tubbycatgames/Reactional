@@ -12,11 +12,11 @@ publish: &publish
 
     - run:
         name: Login into Expo
-        command: yarn expo login -u $EXPO_USERNAME -p $EXPO_PASSWORD
+        command: npx expo-cli login -u $EXPO_USERNAME -p $EXPO_PASSWORD
 
     - run:
         name: Publish to Expo Android
-        command: yarn expo build:android -t app-bundle --release-channel $EXPO_RELEASE_CHANNEL
+        command: npx expo-cli build:android -t app-bundle --release-channel $EXPO_RELEASE_CHANNEL
 
 jobs:
   publish_to_expo_dev:
