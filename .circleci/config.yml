@@ -7,20 +7,20 @@ publish: &publish
     - checkout
 
     - run:
-        name: Installing dependencies
-        command: yarn
+      name: Installing dependencies
+      command: yarn
 
     - run:
-        name: Login into Expo
-        command: npx expo-cli login -u $EXPO_USERNAME -p $EXPO_PASSWORD
+      name: Login into Expo
+      command: npx expo-cli login -u $EXPO_USERNAME -p $EXPO_PASSWORD
 
     - run:
-        name: Publish to Expo Android
-        command: npx expo-cli build:android -t apk --release-channel $EXPO_RELEASE_CHANNEL
+      name: Publish to Expo Android
+      command: npx expo-cli build:android -t apk --release-channel $EXPO_RELEASE_CHANNEL
 
     - run:
-        name: Publish to Expo iOS
-        command: npx expo-cli build:ios -t simulator --release-channel $EXPO_RELEASE_CHANNEL
+      name: Publish to Expo iOS
+      command: npx expo-cli build:ios -t simulator --release-channel $EXPO_RELEASE_CHANNEL
 
 jobs:
   publish_to_expo_dev:
