@@ -2,6 +2,7 @@
   "expo": {
     "name": "reactional",
     "slug": "reactional",
+    "description": "An accessible open-source game about reactions",
     "platforms": [
       "ios",
       "android",
