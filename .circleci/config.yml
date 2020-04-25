@@ -1,6 +1,6 @@
 version: 2
 publish: &publish
-  working_directory: ~/my-app
+  working_directory: ~/reactional
   docker:
     - image: circleci/node:12.16.2
   steps:
@@ -12,11 +12,11 @@ publish: &publish
 
     - run:
         name: Login into Expo
-        command: npx expo-cli login -u $EXPO_USERNAME -p $EXPO_PASSWORD
+        command: yarn expo login -u $EXPO_USERNAME -p $EXPO_PASSWORD
 
     - run:
-        name: Publish to Expo
-        command: npx expo-cli publish --non-interactive --max-workers 1 --release-channel $EXPO_RELEASE_CHANNEL
+        name: Publish to Expo Android
+        command: yarn expo build:android -t app-bundle --release-channel $EXPO_RELEASE_CHANNEL
 
 jobs:
   publish_to_expo_dev:
@@ -31,7 +31,7 @@ jobs:
 
 workflows:
   version: 2
-  my_app:
+  reactional:
     jobs:
       - publish_to_expo_dev:
           filters:
