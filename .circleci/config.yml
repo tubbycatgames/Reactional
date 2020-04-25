@@ -16,7 +16,11 @@ publish: &publish
 
     - run:
         name: Publish to Expo Android
-        command: npx expo-cli build:android -t app-bundle --release-channel $EXPO_RELEASE_CHANNEL
+        command: npx expo-cli build:android -t apk --release-channel $EXPO_RELEASE_CHANNEL
+
+    - run:
+        name: Publish to Expo iOS
+        command: npx expo-cli build:ios -t simulator --release-channel $EXPO_RELEASE_CHANNEL
 
 jobs:
   publish_to_expo_dev:

@@ -28,6 +28,7 @@
       "versionCode": 1
     },
     "ios": {
+      "bundleIdentifier": "com.tubbycatgames.reactional",
       "supportsTablet": true
     }
   }
