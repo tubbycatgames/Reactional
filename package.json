@@ -15,6 +15,7 @@
     "@react-navigation/stack": "^5.2.14",
     "expo": "~37.0.3",
     "expo-constants": "~9.0.0",
+    "husky": "^4.2.5",
     "react": "~16.9.0",
     "react-dom": "~16.9.0",
     "react-native": "https://github.com/expo/react-native/archive/sdk-37.0.1.tar.gz",
@@ -39,5 +40,12 @@
   },
   "jest": {
     "preset": "jest-expo"
+  },
+  "husky": {
+    "husky": {
+      "hooks": {
+        "pre-push": "yarn test"
+      }
+    }
   }
 }
