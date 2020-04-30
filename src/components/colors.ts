@@ -20,11 +20,9 @@ export const getSchemeStyle = (dark: any, light: any) => {
 }
 
 export const getBackgroundStyle = getSchemeStyle(
-  styles.darkBackground,
-  styles.lightBackground
+  styles.darkBackground, styles.lightBackground
 )
 
 export const getPrimaryTextStyle = getSchemeStyle(
-  styles.darkTextPrimary,
-  styles.lightTextPrimary
+  styles.darkTextPrimary, styles.lightTextPrimary
 )
