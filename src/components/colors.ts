@@ -2,16 +2,16 @@ import { StyleSheet } from 'react-native'
 
 const styles = StyleSheet.create({
   darkBackground: {
-    backgroundColor: '#000',
+    backgroundColor: '#323a45',
   },
   darkTextPrimary: {
     color: '#FFF',
   },
   lightBackground: {
-    backgroundColor: '#FFF',
+    backgroundColor: '#e1f3f8',
   },
   lightTextPrimary: {
-    color: '#000',
+    color: '#212121',
   },
 })
 
