@@ -25,7 +25,7 @@
     "userInterfaceStyle": "automatic",
     "android": {
       "package": "com.tubbycatgames.reactional",
-      "versionCode": 1
+      "versionCode": 3
     },
     "ios": {
       "bundleIdentifier": "com.tubbycatgames.reactional",
