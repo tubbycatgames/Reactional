@@ -11,6 +11,10 @@ publish: &publish
         command: yarn
 
     - run:
+        name: Test Project
+        command: yarn test
+
+    - run:
         name: Login into Expo
         command: npx expo-cli login -u $EXPO_USERNAME -p $EXPO_PASSWORD
 

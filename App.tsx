@@ -1,8 +1,3 @@
-import React from 'react'
-import { AppearanceProvider } from 'react-native-appearance'
-
-import HomeScreen from './src/screens/home'
-
-const App = () => <AppearanceProvider><HomeScreen /></AppearanceProvider>
+import { App } from './src'
 
 export default App

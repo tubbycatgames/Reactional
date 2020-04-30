@@ -1,8 +1,8 @@
-import React from 'react';
-import renderer from 'react-test-renderer';
-import { View } from 'react-native';
+import React from 'react'
+import renderer from 'react-test-renderer'
+import { View } from 'react-native'
 
-import { withSchemedStyle } from '../schemed';
+import { withSchemedStyle } from '../schemed'
 
 describe('withSchemedStyle', () => {
   it('should wrap a component with a scheme driven style', () => {
@@ -14,7 +14,7 @@ describe('withSchemedStyle', () => {
             style={{color: 'blue'}} 
             testId="A Test" 
         />
-    ).toJSON();
-    expect(tree).toMatchSnapshot();
-  });
-});
+    ).toJSON()
+    expect(tree).toMatchSnapshot()
+  })
+})

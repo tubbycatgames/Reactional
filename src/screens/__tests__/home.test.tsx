@@ -1,11 +1,11 @@
-import React from 'react';
-import renderer from 'react-test-renderer';
+import React from 'react'
+import renderer from 'react-test-renderer'
 
-import Home from '../home';
+import Home from '../home'
 
 describe('Home', () => {
   it('should render', () => {
-    const tree = renderer.create(<Home />).toJSON();
-    expect(tree).toMatchSnapshot();
-  });
-});
+    const tree = renderer.create(<Home />).toJSON()
+    expect(tree).toMatchSnapshot()
+  })
+})

@@ -14,4 +14,4 @@ export const withSchemedStyle = (Wrapped: ComponentType, getStyle: Function) =>
 
 export const SchemeText = withSchemedStyle(Text, getPrimaryTextStyle)
 export const SchemeBackground = withSchemedStyle(View, getBackgroundStyle)
-export const SchemeSafeArea = withSchemedStyle(SafeAreaView, getBackgroundStyle);
+export const SchemeSafeArea = withSchemedStyle(SafeAreaView, getBackgroundStyle)
