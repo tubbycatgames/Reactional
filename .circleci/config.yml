@@ -12,7 +12,11 @@ publish: &publish
 
     - run:
         name: Test Project
-        command: yarn test
+        command: yarn test --coverage
+
+    - run:
+        name: Report Coverage
+        command: bash <(curl -s https://codecov.io/bash)
 
     - run:
         name: Login into Expo
