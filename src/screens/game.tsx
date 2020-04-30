@@ -1,36 +1,23 @@
 import React from 'react'
-import { StackNavigationProp } from '@react-navigation/stack'
-import { Button, StyleSheet } from 'react-native'
+import { Button } from 'react-native'
 
-import { 
-  SchemeBackground, 
-  SchemeSafeArea,
-  SchemeText, 
-} from '../components/schemed'
+import { SchemeText } from '../components/schemed'
+
+import { ScreenView } from './view'
 
 type Props = {
   navigation: any,
 }
 
 const GameScreen = ({ navigation }: Props) => (
-  <SchemeSafeArea style={styles.container} >
-    <SchemeBackground style={styles.container}>
-      <SchemeText>In Progress!</SchemeText>
-      <Button
-        accessibilityLabel={'Click to return Home'}
-        onPress={navigation.goBack}
-        title={'Go Home'}
-      />
-    </SchemeBackground>
-  </SchemeSafeArea>
+  <ScreenView>
+    <SchemeText>In Progress!</SchemeText>
+    <Button
+      accessibilityLabel={'Click to return Home'}
+      onPress={navigation.goBack}
+      title={'Go Home'}
+    />
+  </ScreenView>
 )
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-})
 
 export default GameScreen
