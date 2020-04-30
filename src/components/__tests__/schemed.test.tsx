@@ -9,12 +9,9 @@ describe('withSchemedStyle', () => {
     const getStyle = () => ({ backgroundColor: 'transparent' })
     const SchemedView = withSchemedStyle(View, getStyle)
 
-    const tree = renderer.create(
-        <SchemedView 
-            style={{color: 'blue'}} 
-            testId="A Test" 
-        />
-    ).toJSON()
-    expect(tree).toMatchSnapshot()
+    const render = renderer.create(
+      <SchemedView style={{ color: 'blue' }} testId='A Test' />
+    )
+    expect(render.toJSON()).toMatchSnapshot()
   })
 })

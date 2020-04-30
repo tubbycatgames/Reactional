@@ -16,15 +16,15 @@ const styles = StyleSheet.create({
 })
 
 export const getSchemeStyle = (dark: any, light: any) => {
-  return (scheme: string) => scheme === 'dark' ? dark : light
+  return (scheme: string) => (scheme === 'dark' ? dark : light)
 }
 
 export const getBackgroundStyle = getSchemeStyle(
   styles.darkBackground,
   styles.lightBackground
 )
-    
+
 export const getPrimaryTextStyle = getSchemeStyle(
-  styles.darkTextPrimary, 
+  styles.darkTextPrimary,
   styles.lightTextPrimary
 )

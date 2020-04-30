@@ -6,7 +6,7 @@ import { SchemeText } from '../components/schemed'
 import { ScreenView } from './view'
 
 type Props = {
-  navigation: any,
+  navigation: any
 }
 
 const GameScreen = ({ navigation }: Props) => (

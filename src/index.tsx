@@ -9,12 +9,12 @@ import HomeScreen from './screens/home'
 const Stack = createStackNavigator()
 
 export const App = () => (
-    <AppearanceProvider>
-        <NavigationContainer>
-            <Stack.Navigator>
-                <Stack.Screen name="Home" component={HomeScreen} />
-                <Stack.Screen name="Game" component={GameScreen} />
-            </Stack.Navigator>
-        </NavigationContainer>
-    </AppearanceProvider>
+  <AppearanceProvider>
+    <NavigationContainer>
+      <Stack.Navigator>
+        <Stack.Screen name='Home' component={HomeScreen} />
+        <Stack.Screen name='Game' component={GameScreen} />
+      </Stack.Navigator>
+    </NavigationContainer>
+  </AppearanceProvider>
 )

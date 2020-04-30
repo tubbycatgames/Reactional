@@ -6,11 +6,11 @@ import { ScreenView } from '../view'
 
 describe('Screen View', () => {
   it('should wrap children in a screen container', () => {
-    const tree = renderer.create(
+    const render = renderer.create(
       <ScreenView>
         <Text>Howdy Ho!</Text>
       </ScreenView>
-    ).toJSON()
-    expect(tree).toMatchSnapshot()
+    )
+    expect(render.toJSON()).toMatchSnapshot()
   })
 })

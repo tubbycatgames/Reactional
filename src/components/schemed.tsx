@@ -4,12 +4,13 @@ import { useColorScheme } from 'react-native-appearance'
 
 import { getBackgroundStyle, getPrimaryTextStyle } from './colors'
 
-export const withSchemedStyle = (Wrapped: ComponentType, getStyle: Function) =>
-{
-  return (props: any) => <Wrapped 
-    {...props}
-    style={[getStyle(useColorScheme()), props.style]}
-  />
+export const withSchemedStyle = (
+  Wrapped: ComponentType,
+  getStyle: Function
+) => {
+  return (props: any) => (
+    <Wrapped {...props} style={[getStyle(useColorScheme()), props.style]} />
+  )
 }
 
 export const SchemeText = withSchemedStyle(Text, getPrimaryTextStyle)
