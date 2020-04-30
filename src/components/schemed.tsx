@@ -4,7 +4,7 @@ import { useColorScheme } from 'react-native-appearance'
 
 import { getBackgroundStyle, getPrimaryTextStyle } from './colors'
 
-const withSchemedStyle = (Wrapped: ComponentType, getStyle: Function) =>
+export const withSchemedStyle = (Wrapped: ComponentType, getStyle: Function) =>
 {
   return (props: any) => <Wrapped 
     {...props}

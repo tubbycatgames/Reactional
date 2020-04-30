@@ -15,7 +15,7 @@ const styles = StyleSheet.create({
   },
 })
 
-const getSchemeStyle = (dark: any, light: any) => {
+export const getSchemeStyle = (dark: any, light: any) => {
   return (scheme: string) => scheme === 'dark' ? dark : light
 }
 
