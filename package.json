@@ -43,14 +43,12 @@
     "preset": "jest-expo"
   },
   "husky": {
-    "husky": {
-      "hooks": {
-        "pre-commit": "lint-staged",
-        "pre-push": "yarn test"
-      }
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "pre-push": "yarn test"
     }
   },
   "lint-staged": {
-    "*": "prettier --write"
+    "*.{js,jsx,ts,tsx,md,html,css}": "prettier --write"
   }
 }
