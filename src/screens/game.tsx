@@ -1,6 +1,6 @@
 import React from 'react'
-import { Button, StyleSheet } from 'react-native'
 import { StackNavigationProp } from '@react-navigation/stack'
+import { Button, StyleSheet } from 'react-native'
 
 import { 
   SchemeBackground, 
@@ -12,16 +12,14 @@ type Props = {
   navigation: any,
 }
 
-const HomeScreen = ({ navigation }: Props) => (
+const GameScreen = ({ navigation }: Props) => (
   <SchemeSafeArea style={styles.container} >
     <SchemeBackground style={styles.container}>
-      <SchemeText>Reactional!</SchemeText>
-      <SchemeText>An accessible, open-source game about reactions</SchemeText>
-      <SchemeText>Meant for learning, guiding, and enjoyment</SchemeText>
+      <SchemeText>In Progress!</SchemeText>
       <Button
-        accessibilityLabel={'Click to play the Game'}
-        onPress={() => navigation.navigate('Game')}
-        title={'Play!'}
+        accessibilityLabel={'Click to return Home'}
+        onPress={navigation.goBack}
+        title={'Go Home'}
       />
     </SchemeBackground>
   </SchemeSafeArea>
@@ -35,4 +33,4 @@ const styles = StyleSheet.create({
   },
 })
 
-export default HomeScreen
+export default GameScreen

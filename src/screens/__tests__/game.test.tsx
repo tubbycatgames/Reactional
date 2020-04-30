@@ -1,14 +1,13 @@
 import React from 'react'
 import renderer from 'react-test-renderer'
 
-import Home from '../home'
+import Game from '../game'
 
-const navigation = { navigate: jest.fn() }
-
-describe('Home', () => {
+const navigation = { goBack: jest.fn() }
+describe('Game', () => {
   it('should render', () => {
     const tree = renderer.create(
-      <Home navigation={navigation} />
+      <Game navigation={navigation} />
     ).toJSON()
     expect(tree).toMatchSnapshot()
   })

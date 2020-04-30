@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Home should render 1`] = `
+exports[`Game should render 1`] = `
 <RCTSafeAreaView
   emulateUnlessSupported={true}
   style={
@@ -40,34 +40,10 @@ exports[`Home should render 1`] = `
         ]
       }
     >
-      Reactional!
-    </Text>
-    <Text
-      style={
-        Array [
-          Object {
-            "color": "#212121",
-          },
-          undefined,
-        ]
-      }
-    >
-      An accessible, open-source game about reactions
-    </Text>
-    <Text
-      style={
-        Array [
-          Object {
-            "color": "#212121",
-          },
-          undefined,
-        ]
-      }
-    >
-      Meant for learning, guiding, and enjoyment
+      In Progress!
     </Text>
     <View
-      accessibilityLabel="Click to play the Game"
+      accessibilityLabel="Click to return Home"
       accessibilityRole="button"
       accessibilityStates={Array []}
       accessible={true}
@@ -105,7 +81,7 @@ exports[`Home should render 1`] = `
             ]
           }
         >
-          Play!
+          Go Home
         </Text>
       </View>
     </View>
