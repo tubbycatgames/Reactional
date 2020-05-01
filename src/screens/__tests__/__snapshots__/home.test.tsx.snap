@@ -1,8 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Home should render 1`] = `
-<RCTSafeAreaView
-  emulateUnlessSupported={true}
+<View
   style={
     Array [
       Object {
@@ -16,99 +15,84 @@ exports[`Home should render 1`] = `
     ]
   }
 >
-  <View
+  <Text
     style={
       Array [
         Object {
-          "backgroundColor": "#e1f3f8",
+          "color": "#212121",
         },
-        Object {
-          "alignItems": "center",
-          "flex": 1,
-          "justifyContent": "center",
-        },
+        undefined,
       ]
     }
   >
-    <Text
-      style={
-        Array [
-          Object {
-            "color": "#212121",
-          },
-          undefined,
-        ]
-      }
-    >
-      Reactional!
-    </Text>
-    <Text
-      style={
-        Array [
-          Object {
-            "color": "#212121",
-          },
-          undefined,
-        ]
-      }
-    >
-      An accessible, open-source game about reactions
-    </Text>
-    <Text
-      style={
-        Array [
-          Object {
-            "color": "#212121",
-          },
-          undefined,
-        ]
-      }
-    >
-      Meant for learning, guiding, and enjoyment
-    </Text>
-    <View
-      accessibilityLabel="Click to play the Game"
-      accessibilityRole="button"
-      accessibilityStates={Array []}
-      accessible={true}
-      focusable={true}
-      isTVSelectable={true}
-      onClick={[Function]}
-      onResponderGrant={[Function]}
-      onResponderMove={[Function]}
-      onResponderRelease={[Function]}
-      onResponderTerminate={[Function]}
-      onResponderTerminationRequest={[Function]}
-      onStartShouldSetResponder={[Function]}
-      style={
+    Reactional!
+  </Text>
+  <Text
+    style={
+      Array [
         Object {
-          "opacity": 1,
-        }
+          "color": "#212121",
+        },
+        undefined,
+      ]
+    }
+  >
+    An accessible, open-source game about reactions
+  </Text>
+  <Text
+    style={
+      Array [
+        Object {
+          "color": "#212121",
+        },
+        undefined,
+      ]
+    }
+  >
+    Meant for learning, guiding, and enjoyment
+  </Text>
+  <View
+    accessibilityLabel="Click to play the Game"
+    accessibilityRole="button"
+    accessibilityStates={Array []}
+    accessible={true}
+    focusable={true}
+    isTVSelectable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "opacity": 1,
+      }
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {},
+        ]
       }
     >
-      <View
+      <Text
         style={
           Array [
-            Object {},
+            Object {
+              "color": "#007AFF",
+              "fontSize": 18,
+              "padding": 8,
+              "textAlign": "center",
+            },
           ]
         }
       >
-        <Text
-          style={
-            Array [
-              Object {
-                "color": "#007AFF",
-                "fontSize": 18,
-                "padding": 8,
-                "textAlign": "center",
-              },
-            ]
-          }
-        >
-          Play!
-        </Text>
-      </View>
+        Play!
+      </Text>
     </View>
   </View>
-</RCTSafeAreaView>
+</View>
 `;

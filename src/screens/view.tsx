@@ -2,15 +2,11 @@ import React from 'react'
 import { FunctionComponent } from 'react'
 import { StyleSheet } from 'react-native'
 
-import { SchemeBackground, SchemeSafeArea } from '../components/schemed'
+import { SchemeBackground } from '../components/schemed'
 
-export const ScreenView: FunctionComponent = ({ children }) => {
-  return (
-    <SchemeSafeArea style={styles.container}>
-      <SchemeBackground style={styles.container}>{children}</SchemeBackground>
-    </SchemeSafeArea>
-  )
-}
+export const ScreenView: FunctionComponent = ({ children }) => (
+  <SchemeBackground style={styles.container}>{children}</SchemeBackground>
+)
 
 const styles = StyleSheet.create({
   container: {

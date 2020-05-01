@@ -169,8 +169,7 @@ exports[`App should render with all providers and navigation 1`] = `
                         }
                       }
                     >
-                      <RCTSafeAreaView
-                        emulateUnlessSupported={true}
+                      <View
                         style={
                           Array [
                             Object {
@@ -184,101 +183,86 @@ exports[`App should render with all providers and navigation 1`] = `
                           ]
                         }
                       >
-                        <View
+                        <Text
                           style={
                             Array [
                               Object {
-                                "backgroundColor": "#e1f3f8",
+                                "color": "#212121",
                               },
-                              Object {
-                                "alignItems": "center",
-                                "flex": 1,
-                                "justifyContent": "center",
-                              },
+                              undefined,
                             ]
                           }
                         >
-                          <Text
-                            style={
-                              Array [
-                                Object {
-                                  "color": "#212121",
-                                },
-                                undefined,
-                              ]
-                            }
-                          >
-                            Reactional!
-                          </Text>
-                          <Text
-                            style={
-                              Array [
-                                Object {
-                                  "color": "#212121",
-                                },
-                                undefined,
-                              ]
-                            }
-                          >
-                            An accessible, open-source game about reactions
-                          </Text>
-                          <Text
-                            style={
-                              Array [
-                                Object {
-                                  "color": "#212121",
-                                },
-                                undefined,
-                              ]
-                            }
-                          >
-                            Meant for learning, guiding, and enjoyment
-                          </Text>
-                          <View
-                            accessibilityLabel="Click to play the Game"
-                            accessibilityRole="button"
-                            accessibilityStates={Array []}
-                            accessible={true}
-                            focusable={true}
-                            isTVSelectable={true}
-                            onClick={[Function]}
-                            onResponderGrant={[Function]}
-                            onResponderMove={[Function]}
-                            onResponderRelease={[Function]}
-                            onResponderTerminate={[Function]}
-                            onResponderTerminationRequest={[Function]}
-                            onStartShouldSetResponder={[Function]}
-                            style={
+                          Reactional!
+                        </Text>
+                        <Text
+                          style={
+                            Array [
                               Object {
-                                "opacity": 1,
-                              }
+                                "color": "#212121",
+                              },
+                              undefined,
+                            ]
+                          }
+                        >
+                          An accessible, open-source game about reactions
+                        </Text>
+                        <Text
+                          style={
+                            Array [
+                              Object {
+                                "color": "#212121",
+                              },
+                              undefined,
+                            ]
+                          }
+                        >
+                          Meant for learning, guiding, and enjoyment
+                        </Text>
+                        <View
+                          accessibilityLabel="Click to play the Game"
+                          accessibilityRole="button"
+                          accessibilityStates={Array []}
+                          accessible={true}
+                          focusable={true}
+                          isTVSelectable={true}
+                          onClick={[Function]}
+                          onResponderGrant={[Function]}
+                          onResponderMove={[Function]}
+                          onResponderRelease={[Function]}
+                          onResponderTerminate={[Function]}
+                          onResponderTerminationRequest={[Function]}
+                          onStartShouldSetResponder={[Function]}
+                          style={
+                            Object {
+                              "opacity": 1,
+                            }
+                          }
+                        >
+                          <View
+                            style={
+                              Array [
+                                Object {},
+                              ]
                             }
                           >
-                            <View
+                            <Text
                               style={
                                 Array [
-                                  Object {},
+                                  Object {
+                                    "color": "#007AFF",
+                                    "fontSize": 18,
+                                    "padding": 8,
+                                    "textAlign": "center",
+                                  },
                                 ]
                               }
                             >
-                              <Text
-                                style={
-                                  Array [
-                                    Object {
-                                      "color": "#007AFF",
-                                      "fontSize": 18,
-                                      "padding": 8,
-                                      "textAlign": "center",
-                                    },
-                                  ]
-                                }
-                              >
-                                Play!
-                              </Text>
-                            </View>
+                              Play!
+                            </Text>
                           </View>
                         </View>
-                      </RCTSafeAreaView>
+                      </View>
                     </View>
                   </View>
                 </View>
@@ -321,7 +305,7 @@ exports[`App should render with all providers and navigation 1`] = `
             <View
               style={
                 Object {
-                  "backgroundColor": "rgb(255, 255, 255)",
+                  "backgroundColor": "#e1f3f8",
                   "borderBottomColor": "rgb(224, 224, 224)",
                   "flex": 1,
                   "shadowColor": "rgb(224, 224, 224)",
@@ -381,9 +365,9 @@ exports[`App should render with all providers and navigation 1`] = `
                   onLayout={[Function]}
                   style={
                     Object {
-                      "color": "rgb(28, 28, 30)",
+                      "color": "#212121",
                       "fontSize": 17,
-                      "fontWeight": "600",
+                      "fontWeight": "bold",
                     }
                   }
                 >

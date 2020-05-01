@@ -1,8 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Game should render 1`] = `
-<RCTSafeAreaView
-  emulateUnlessSupported={true}
+<View
   style={
     Array [
       Object {
@@ -16,75 +15,60 @@ exports[`Game should render 1`] = `
     ]
   }
 >
-  <View
+  <Text
     style={
       Array [
         Object {
-          "backgroundColor": "#e1f3f8",
+          "color": "#212121",
         },
-        Object {
-          "alignItems": "center",
-          "flex": 1,
-          "justifyContent": "center",
-        },
+        undefined,
       ]
     }
   >
-    <Text
+    In Progress!
+  </Text>
+  <View
+    accessibilityLabel="Click to return Home"
+    accessibilityRole="button"
+    accessibilityStates={Array []}
+    accessible={true}
+    focusable={true}
+    isTVSelectable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "opacity": 1,
+      }
+    }
+  >
+    <View
       style={
         Array [
-          Object {
-            "color": "#212121",
-          },
-          undefined,
+          Object {},
         ]
       }
     >
-      In Progress!
-    </Text>
-    <View
-      accessibilityLabel="Click to return Home"
-      accessibilityRole="button"
-      accessibilityStates={Array []}
-      accessible={true}
-      focusable={true}
-      isTVSelectable={true}
-      onClick={[Function]}
-      onResponderGrant={[Function]}
-      onResponderMove={[Function]}
-      onResponderRelease={[Function]}
-      onResponderTerminate={[Function]}
-      onResponderTerminationRequest={[Function]}
-      onStartShouldSetResponder={[Function]}
-      style={
-        Object {
-          "opacity": 1,
-        }
-      }
-    >
-      <View
+      <Text
         style={
           Array [
-            Object {},
+            Object {
+              "color": "#007AFF",
+              "fontSize": 18,
+              "padding": 8,
+              "textAlign": "center",
+            },
           ]
         }
       >
-        <Text
-          style={
-            Array [
-              Object {
-                "color": "#007AFF",
-                "fontSize": 18,
-                "padding": 8,
-                "textAlign": "center",
-              },
-            ]
-          }
-        >
-          Go Home
-        </Text>
-      </View>
+        Go Home
+      </Text>
     </View>
   </View>
-</RCTSafeAreaView>
+</View>
 `;

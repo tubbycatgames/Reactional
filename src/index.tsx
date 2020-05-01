@@ -1,20 +1,38 @@
 import React from 'react'
-import { AppearanceProvider } from 'react-native-appearance'
+import { AppearanceProvider, useColorScheme } from 'react-native-appearance'
 import { NavigationContainer } from '@react-navigation/native'
 import { createStackNavigator } from '@react-navigation/stack'
 
 import GameScreen from './screens/game'
 import HomeScreen from './screens/home'
+import { getPrimaryTextStyle, getBackgroundStyle } from './components/colors'
 
 const Stack = createStackNavigator()
 
-export const App = () => (
-  <AppearanceProvider>
-    <NavigationContainer>
-      <Stack.Navigator>
-        <Stack.Screen name='Home' component={HomeScreen} />
-        <Stack.Screen name='Game' component={GameScreen} />
-      </Stack.Navigator>
-    </NavigationContainer>
-  </AppearanceProvider>
-)
+const screenOptions = {
+  headerStyle: {
+    backgroundColor: '#32455f',
+  },
+}
+
+export const App = () => {
+  const colorScheme = useColorScheme()
+  const screenOptions = {
+    headerStyle: getBackgroundStyle(colorScheme),
+    headerTintColor: getPrimaryTextStyle(colorScheme).color,
+    headerTitleStyle: {
+      fontWeight: 'bold',
+    },
+  }
+
+  return (
+    <AppearanceProvider>
+      <NavigationContainer>
+        <Stack.Navigator screenOptions={screenOptions}>
+          <Stack.Screen name='Home' component={HomeScreen} />
+          <Stack.Screen name='Game' component={GameScreen} />
+        </Stack.Navigator>
+      </NavigationContainer>
+    </AppearanceProvider>
+  )
+}

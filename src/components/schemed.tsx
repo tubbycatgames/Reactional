@@ -1,5 +1,5 @@
 import React, { ComponentType } from 'react'
-import { SafeAreaView, Text, View } from 'react-native'
+import { Text, View } from 'react-native'
 import { useColorScheme } from 'react-native-appearance'
 
 import { getBackgroundStyle, getPrimaryTextStyle } from './colors'
@@ -15,4 +15,3 @@ export const withSchemedStyle = (
 
 export const SchemeText = withSchemedStyle(Text, getPrimaryTextStyle)
 export const SchemeBackground = withSchemedStyle(View, getBackgroundStyle)
-export const SchemeSafeArea = withSchemedStyle(SafeAreaView, getBackgroundStyle)

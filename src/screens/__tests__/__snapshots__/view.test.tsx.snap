@@ -1,8 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Screen View should wrap children in a screen container 1`] = `
-<RCTSafeAreaView
-  emulateUnlessSupported={true}
+<View
   style={
     Array [
       Object {
@@ -16,23 +15,8 @@ exports[`Screen View should wrap children in a screen container 1`] = `
     ]
   }
 >
-  <View
-    style={
-      Array [
-        Object {
-          "backgroundColor": "#e1f3f8",
-        },
-        Object {
-          "alignItems": "center",
-          "flex": 1,
-          "justifyContent": "center",
-        },
-      ]
-    }
-  >
-    <Text>
-      Howdy Ho!
-    </Text>
-  </View>
-</RCTSafeAreaView>
+  <Text>
+    Howdy Ho!
+  </Text>
+</View>
 `;
