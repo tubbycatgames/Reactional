@@ -4,7 +4,8 @@ import { NavigationContainer } from '@react-navigation/native'
 import { createStackNavigator } from '@react-navigation/stack'
 
 import GameScreen from './screens/game'
-import HomeScreen from './screens/home'
+import MenuScreen from './screens/menu'
+import SwipeScreen from './screens/swipe'
 import { getPrimaryTextStyle, getBackgroundStyle } from './components/colors'
 
 const Stack = createStackNavigator()
@@ -23,8 +24,9 @@ export const App = () => {
     <AppearanceProvider>
       <NavigationContainer>
         <Stack.Navigator screenOptions={screenOptions}>
-          <Stack.Screen name='Home' component={HomeScreen} />
+          <Stack.Screen name='Menu' component={MenuScreen} />
           <Stack.Screen name='Game' component={GameScreen} />
+          <Stack.Screen name='Swipe' component={SwipeScreen} />
         </Stack.Navigator>
       </NavigationContainer>
     </AppearanceProvider>

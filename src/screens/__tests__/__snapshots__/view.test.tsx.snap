@@ -8,7 +8,6 @@ exports[`Screen View should wrap children in a screen container 1`] = `
         "backgroundColor": "#e1f3f8",
       },
       Object {
-        "alignItems": "center",
         "flex": 1,
         "justifyContent": "center",
       },

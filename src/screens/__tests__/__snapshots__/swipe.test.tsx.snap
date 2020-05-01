@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Home should render 1`] = `
+exports[`Swipe should render 1`] = `
 <View
   style={
     Array [
@@ -8,51 +8,14 @@ exports[`Home should render 1`] = `
         "backgroundColor": "#e1f3f8",
       },
       Object {
-        "alignItems": "center",
         "flex": 1,
         "justifyContent": "center",
       },
     ]
   }
 >
-  <Text
-    style={
-      Array [
-        Object {
-          "color": "#212121",
-        },
-        undefined,
-      ]
-    }
-  >
-    Reactional!
-  </Text>
-  <Text
-    style={
-      Array [
-        Object {
-          "color": "#212121",
-        },
-        undefined,
-      ]
-    }
-  >
-    An accessible, open-source game about reactions
-  </Text>
-  <Text
-    style={
-      Array [
-        Object {
-          "color": "#212121",
-        },
-        undefined,
-      ]
-    }
-  >
-    Meant for learning, guiding, and enjoyment
-  </Text>
   <View
-    accessibilityLabel="Click to play the Game"
+    accessibilityLabel="Click to return to the Menu"
     accessibilityRole="button"
     accessibilityStates={Array []}
     accessible={true}
@@ -90,7 +53,7 @@ exports[`Home should render 1`] = `
           ]
         }
       >
-        Play!
+        Menu
       </Text>
     </View>
   </View>

@@ -11,7 +11,6 @@ export const ScreenView: FunctionComponent = ({ children }) => (
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    alignItems: 'center',
     justifyContent: 'center',
   },
 })

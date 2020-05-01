@@ -1,0 +1,140 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Menu should render 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "backgroundColor": "#e1f3f8",
+      },
+      Object {
+        "flex": 1,
+        "justifyContent": "center",
+      },
+    ]
+  }
+>
+  <Text
+    style={
+      Array [
+        Object {
+          "color": "#212121",
+        },
+        undefined,
+      ]
+    }
+  >
+    Reactional!
+  </Text>
+  <Text
+    style={
+      Array [
+        Object {
+          "color": "#212121",
+        },
+        undefined,
+      ]
+    }
+  >
+    An accessible, open-source game about reactions
+  </Text>
+  <Text
+    style={
+      Array [
+        Object {
+          "color": "#212121",
+        },
+        undefined,
+      ]
+    }
+  >
+    Meant for learning, guiding, and enjoyment
+  </Text>
+  <View
+    accessibilityLabel="Click to play the Game"
+    accessibilityRole="button"
+    accessibilityStates={Array []}
+    accessible={true}
+    focusable={true}
+    isTVSelectable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "opacity": 1,
+      }
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {},
+        ]
+      }
+    >
+      <Text
+        style={
+          Array [
+            Object {
+              "color": "#007AFF",
+              "fontSize": 18,
+              "padding": 8,
+              "textAlign": "center",
+            },
+          ]
+        }
+      >
+        Play!
+      </Text>
+    </View>
+  </View>
+  <View
+    accessibilityLabel="Click to Enter the Swipatorium!"
+    accessibilityRole="button"
+    accessibilityStates={Array []}
+    accessible={true}
+    focusable={true}
+    isTVSelectable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "opacity": 1,
+      }
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {},
+        ]
+      }
+    >
+      <Text
+        style={
+          Array [
+            Object {
+              "color": "#007AFF",
+              "fontSize": 18,
+              "padding": 8,
+              "textAlign": "center",
+            },
+          ]
+        }
+      >
+        Swipe!
+      </Text>
+    </View>
+  </View>
+</View>
+`;

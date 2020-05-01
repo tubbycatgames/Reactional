@@ -5,11 +5,7 @@ import { SchemeText } from '../components/schemed'
 
 import { ScreenView } from './view'
 
-type Props = {
-  navigation: any
-}
-
-const HomeScreen = ({ navigation }: Props) => (
+const MenuScreen = ({ navigation }: any) => (
   <ScreenView>
     <SchemeText>Reactional!</SchemeText>
     <SchemeText>An accessible, open-source game about reactions</SchemeText>
@@ -19,7 +15,12 @@ const HomeScreen = ({ navigation }: Props) => (
       onPress={() => navigation.navigate('Game')}
       title='Play!'
     />
+    <Button
+      accessibilityLabel='Click to Enter the Swipatorium!'
+      onPress={() => navigation.navigate('Swipe')}
+      title='Swipe!'
+    />
   </ScreenView>
 )
 
-export default HomeScreen
+export default MenuScreen

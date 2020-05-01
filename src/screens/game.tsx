@@ -4,19 +4,12 @@ import { Button } from 'react-native'
 import { SchemeText } from '../components/schemed'
 
 import { ScreenView } from './view'
+import { MenuButton } from '../components/buttons'
 
-type Props = {
-  navigation: any
-}
-
-const GameScreen = ({ navigation }: Props) => (
+const GameScreen = ({ navigation }: any) => (
   <ScreenView>
     <SchemeText>In Progress!</SchemeText>
-    <Button
-      accessibilityLabel='Click to return to the Home screen'
-      onPress={navigation.goBack}
-      title='Go Home'
-    />
+    <MenuButton navigate={navigation.navigate} />
   </ScreenView>
 )
 
