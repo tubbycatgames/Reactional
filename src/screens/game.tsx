@@ -13,9 +13,9 @@ const GameScreen = ({ navigation }: Props) => (
   <ScreenView>
     <SchemeText>In Progress!</SchemeText>
     <Button
-      accessibilityLabel={'Click to return Home'}
+      accessibilityLabel='Click to return to the Home screen'
       onPress={navigation.goBack}
-      title={'Go Home'}
+      title='Go Home'
     />
   </ScreenView>
 )

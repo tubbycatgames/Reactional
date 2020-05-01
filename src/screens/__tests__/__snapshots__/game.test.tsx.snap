@@ -28,7 +28,7 @@ exports[`Game should render 1`] = `
     In Progress!
   </Text>
   <View
-    accessibilityLabel="Click to return Home"
+    accessibilityLabel="Click to return to the Home screen"
     accessibilityRole="button"
     accessibilityStates={Array []}
     accessible={true}

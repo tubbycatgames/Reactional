@@ -15,9 +15,9 @@ const HomeScreen = ({ navigation }: Props) => (
     <SchemeText>An accessible, open-source game about reactions</SchemeText>
     <SchemeText>Meant for learning, guiding, and enjoyment</SchemeText>
     <Button
-      accessibilityLabel={'Click to play the Game'}
+      accessibilityLabel='Click to play the Game'
       onPress={() => navigation.navigate('Game')}
-      title={'Play!'}
+      title='Play!'
     />
   </ScreenView>
 )
