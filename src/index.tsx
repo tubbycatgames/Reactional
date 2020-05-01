@@ -9,12 +9,6 @@ import { getPrimaryTextStyle, getBackgroundStyle } from './components/colors'
 
 const Stack = createStackNavigator()
 
-const screenOptions = {
-  headerStyle: {
-    backgroundColor: '#32455f',
-  },
-}
-
 export const App = () => {
   const colorScheme = useColorScheme()
   const screenOptions = {
