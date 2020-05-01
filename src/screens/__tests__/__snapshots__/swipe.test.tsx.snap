@@ -15,6 +15,17 @@ exports[`Swipe should render 1`] = `
   }
 >
   <View
+    collapsable={false}
+    onGestureHandlerEvent={[Function]}
+    onGestureHandlerStateChange={[Function]}
+    style={
+      Object {
+        "flex": 1,
+        "height": "100%",
+      }
+    }
+  />
+  <View
     accessibilityLabel="Click to return to the Menu"
     accessibilityRole="button"
     accessibilityStates={Array []}
