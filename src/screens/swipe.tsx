@@ -1,37 +1,17 @@
 import React from 'react'
-import {
-  Directions,
-  FlingGestureHandler,
-  State,
-} from 'react-native-gesture-handler'
-import { StyleSheet, View, Alert } from 'react-native'
+import { Alert, StyleSheet, View } from 'react-native'
 
 import { MenuButton } from '../components/buttons'
+import { SwipeBoard } from '../components/boards'
 
 import { ScreenView } from './view'
 
 const SwipeScreen = ({ navigation }: any) => {
   return (
     <ScreenView>
-      <FlingGestureHandler
-        direction={Directions.LEFT}
-        onHandlerStateChange={({ nativeEvent }) => {
-          if (nativeEvent.state === State.ACTIVE) {
-            Alert.alert('flingged left!')
-          }
-        }}
-      >
-        <FlingGestureHandler
-          direction={Directions.RIGHT}
-          onHandlerStateChange={({ nativeEvent }) => {
-            if (nativeEvent.state === State.ACTIVE) {
-              Alert.alert('flingged right!')
-            }
-          }}
-        >
-          <View style={styles.container} />
-        </FlingGestureHandler>
-      </FlingGestureHandler>
+      <SwipeBoard onUp={() => Alert.alert('Swipped Up!')}>
+        <View style={styles.container} />
+      </SwipeBoard>
       <MenuButton navigate={navigation.navigate} />
     </ScreenView>
   )

@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SwipeBoard should render children when no events passed 1`] = `
+<Text>
+  Plain
+</Text>
+`;
+
+exports[`SwipeBoard should render wrapped children when an event passed 1`] = `
+<Text
+  collapsable={false}
+  onGestureHandlerEvent={[Function]}
+  onGestureHandlerStateChange={[Function]}
+>
+  Plain
+</Text>
+`;
