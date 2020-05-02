@@ -262,7 +262,7 @@ exports[`App should render with all providers and navigation 1`] = `
                           </View>
                         </View>
                         <View
-                          accessibilityLabel="Click to Enter the Swipatorium!"
+                          accessibilityLabel="Click to enter Swipe Mode"
                           accessibilityRole="button"
                           accessibilityStates={Array []}
                           accessible={true}
