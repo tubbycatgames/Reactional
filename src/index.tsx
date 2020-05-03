@@ -24,9 +24,9 @@ export const App = () => {
     <AppearanceProvider>
       <NavigationContainer>
         <Stack.Navigator screenOptions={screenOptions}>
-          <Stack.Screen name='Menu' component={MenuScreen} />
-          <Stack.Screen name='Game' component={GameScreen} />
-          <Stack.Screen name='Swipe' component={SwipeScreen} />
+          <Stack.Screen name={MenuScreen.screenName} component={MenuScreen} />
+          <Stack.Screen name={GameScreen.screenName} component={GameScreen} />
+          <Stack.Screen name={SwipeScreen.screenName} component={SwipeScreen} />
         </Stack.Navigator>
       </NavigationContainer>
     </AppearanceProvider>

@@ -12,4 +12,6 @@ const GameScreen = ({ navigation }: any) => (
   </ScreenView>
 )
 
+GameScreen.screenName = 'Game'
+
 export default GameScreen

@@ -17,6 +17,8 @@ const SwipeScreen = ({ navigation }: any) => {
   )
 }
 
+SwipeScreen.screenName = 'Swipe'
+
 const styles = StyleSheet.create({
   container: {
     flex: 1,
