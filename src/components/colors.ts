@@ -1,30 +1,50 @@
 import { StyleSheet } from 'react-native'
 
+const darkBackgroundColor = '#1C304A'
+const darkPrimaryButtonColor = '#046B99'
+const darkTextPrimaryColor = '#000'
+const lightBackgroundColor = '#B3EFFF'
+const lightPrimaryButtonColor = '#00CFFF'
+const lightTextPrimaryColor = '#FFF'
+
 const styles = StyleSheet.create({
   darkBackground: {
-    backgroundColor: '#323a45',
+    backgroundColor: darkBackgroundColor,
   },
   darkTextPrimary: {
-    color: '#FFF',
+    color: darkTextPrimaryColor,
   },
   lightBackground: {
-    backgroundColor: '#e1f3f8',
+    backgroundColor: lightBackgroundColor,
   },
   lightTextPrimary: {
-    color: '#212121',
+    color: lightTextPrimaryColor,
   },
 })
 
-export const getSchemeStyle = (dark: any, light: any) => {
+export const getSchemeValue = (dark: any, light: any) => {
   return (scheme: string) => (scheme === 'dark' ? dark : light)
 }
 
-export const getBackgroundStyle = getSchemeStyle(
+export const getBackgroundStyle = getSchemeValue(
   styles.darkBackground,
   styles.lightBackground
 )
+export const getBackgroundColor = getSchemeValue(
+  darkBackgroundColor,
+  lightBackgroundColor
+)
 
-export const getPrimaryTextStyle = getSchemeStyle(
+export const getPrimaryTextStyle = getSchemeValue(
   styles.darkTextPrimary,
   styles.lightTextPrimary
+)
+export const getPrimaryTextColor = getSchemeValue(
+  darkTextPrimaryColor,
+  lightTextPrimaryColor
+)
+
+export const getPrimaryButtonColor = getSchemeValue(
+  darkPrimaryButtonColor,
+  lightPrimaryButtonColor
 )

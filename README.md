@@ -10,5 +10,9 @@ An accessible open-source game about reactions
 Has an accessible approach to supporting Dark and Light modes:
 https://developer.apple.com/design/human-interface-guidelines/ios/visual-design/dark-mode/
 
-Colors have been picked using publicly available color contrast accessibility tools to ensure sufficient contract:
+Colors have been picked using publicly available color contrast
+accessibility tools to ensure sufficient contract:
 http://web-accessibility.carnegiemuseums.org/design/color/
+
+This was also a great tool for finding a monochromatic color palette:
+https://toolness.github.io/accessible-color-matrix/

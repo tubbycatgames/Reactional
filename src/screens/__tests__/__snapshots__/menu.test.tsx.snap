@@ -5,7 +5,7 @@ exports[`Menu should render 1`] = `
   style={
     Array [
       Object {
-        "backgroundColor": "#e1f3f8",
+        "backgroundColor": "#B3EFFF",
       },
       Object {
         "flex": 1,
@@ -18,7 +18,7 @@ exports[`Menu should render 1`] = `
     style={
       Array [
         Object {
-          "color": "#212121",
+          "color": "#FFF",
         },
         undefined,
       ]
@@ -30,7 +30,7 @@ exports[`Menu should render 1`] = `
     style={
       Array [
         Object {
-          "color": "#212121",
+          "color": "#FFF",
         },
         undefined,
       ]
@@ -42,7 +42,7 @@ exports[`Menu should render 1`] = `
     style={
       Array [
         Object {
-          "color": "#212121",
+          "color": "#FFF",
         },
         undefined,
       ]
@@ -86,6 +86,9 @@ exports[`Menu should render 1`] = `
               "padding": 8,
               "textAlign": "center",
             },
+            Object {
+              "color": "#00CFFF",
+            },
           ]
         }
       >
@@ -128,6 +131,9 @@ exports[`Menu should render 1`] = `
               "fontSize": 18,
               "padding": 8,
               "textAlign": "center",
+            },
+            Object {
+              "color": "#00CFFF",
             },
           ]
         }

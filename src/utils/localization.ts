@@ -1,5 +1,5 @@
-import * as Localization from 'expo-localization'
 import i18n from 'i18n-js'
+import { locale } from 'expo-localization'
 
 i18n.translations = {
   en: {
@@ -23,7 +23,6 @@ i18n.translations = {
   },
 }
 
-const locale = Localization.locale === 'mock' ? 'en' : Localization.locale
 i18n.locale = locale
 i18n.fallback = true
 

@@ -1,17 +1,22 @@
 import React, { ComponentType } from 'react'
-import { Text, View } from 'react-native'
+import { Button, Text, View } from 'react-native'
 import { useColorScheme } from 'react-native-appearance'
 
-import { getBackgroundStyle, getPrimaryTextStyle } from './colors'
+import {
+  getBackgroundStyle,
+  getPrimaryButtonColor,
+  getPrimaryTextStyle,
+} from './colors'
 
 export const withSchemedStyle = (
   Wrapped: ComponentType,
   getStyle: Function
-) => {
-  return (props: any) => (
-    <Wrapped {...props} style={[getStyle(useColorScheme()), props.style]} />
-  )
-}
+) => (props: any) => (
+  <Wrapped {...props} style={[getStyle(useColorScheme()), props.style]} />
+)
 
 export const SchemeText = withSchemedStyle(Text, getPrimaryTextStyle)
 export const SchemeBackground = withSchemedStyle(View, getBackgroundStyle)
+export const SchemePrimaryButton = (props: any) => (
+  <Button {...props} color={getPrimaryButtonColor(useColorScheme())} />
+)

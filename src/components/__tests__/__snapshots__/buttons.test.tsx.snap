@@ -37,6 +37,9 @@ exports[`MenuButton should render 1`] = `
             "padding": 8,
             "textAlign": "center",
           },
+          Object {
+            "color": "#00CFFF",
+          },
         ]
       }
     >

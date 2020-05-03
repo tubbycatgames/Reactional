@@ -5,7 +5,7 @@ exports[`Screen View should wrap children in a screen container 1`] = `
   style={
     Array [
       Object {
-        "backgroundColor": "#e1f3f8",
+        "backgroundColor": "#B3EFFF",
       },
       Object {
         "flex": 1,

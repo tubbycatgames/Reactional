@@ -1,11 +1,11 @@
-import { getSchemeStyle } from '../colors'
+import { getSchemeValue } from '../colors'
 
-describe('getSchemeStyle', () => {
+describe('getSchemeValue', () => {
   it('should return a dark scheme value when dark', () => {
-    expect(getSchemeStyle('black', 'white')('dark')).toBe('black')
+    expect(getSchemeValue('black', 'white')('dark')).toBe('black')
   })
 
   it('should return a light theme value otherwise', () => {
-    expect(getSchemeStyle('black', 'white')('light')).toBe('white')
+    expect(getSchemeValue('black', 'white')('light')).toBe('white')
   })
 })

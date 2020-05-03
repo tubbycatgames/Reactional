@@ -1,7 +1,6 @@
 import React from 'react'
-import { Button } from 'react-native'
 
-import { SchemeText } from '../components/schemed'
+import { SchemeText, SchemePrimaryButton } from '../components/schemed'
 import { t } from '../utils/localization'
 
 import { ScreenView } from './view'
@@ -11,12 +10,12 @@ const MenuScreen = ({ navigation }: any) => (
     <SchemeText>{t('title')}</SchemeText>
     <SchemeText>{t('description')}</SchemeText>
     <SchemeText>{t('purpose')}</SchemeText>
-    <Button
+    <SchemePrimaryButton
       accessibilityLabel={t('buttons.play.label')}
       onPress={() => navigation.navigate('Game')}
       title={t('buttons.play.title')}
     />
-    <Button
+    <SchemePrimaryButton
       accessibilityLabel={t('buttons.swipe.label')}
       onPress={() => navigation.navigate('Swipe')}
       title={t('buttons.swipe.title')}
