@@ -1,6 +1,8 @@
 import i18n from 'i18n-js'
 import { locale } from 'expo-localization'
 
+i18n.locale = locale
+i18n.fallbacks = true
 i18n.translations = {
   en: {
     buttons: {
@@ -23,7 +25,4 @@ i18n.translations = {
   },
 }
 
-i18n.locale = locale
-i18n.fallback = true
-
-export const t = i18n.t
+export const { t } = i18n
