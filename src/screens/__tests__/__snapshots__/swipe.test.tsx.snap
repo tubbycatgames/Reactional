@@ -62,7 +62,7 @@ exports[`Swipe should render 1`] = `
               "textAlign": "center",
             },
             Object {
-              "color": "#00CFFF",
+              "color": "#046B99",
             },
           ]
         }

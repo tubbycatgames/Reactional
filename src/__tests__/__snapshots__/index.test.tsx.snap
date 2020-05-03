@@ -186,7 +186,7 @@ exports[`App should render with all providers and navigation 1`] = `
                           style={
                             Array [
                               Object {
-                                "color": "#FFF",
+                                "color": "#000",
                               },
                               undefined,
                             ]
@@ -198,7 +198,7 @@ exports[`App should render with all providers and navigation 1`] = `
                           style={
                             Array [
                               Object {
-                                "color": "#FFF",
+                                "color": "#000",
                               },
                               undefined,
                             ]
@@ -210,7 +210,7 @@ exports[`App should render with all providers and navigation 1`] = `
                           style={
                             Array [
                               Object {
-                                "color": "#FFF",
+                                "color": "#000",
                               },
                               undefined,
                             ]
@@ -255,7 +255,7 @@ exports[`App should render with all providers and navigation 1`] = `
                                     "textAlign": "center",
                                   },
                                   Object {
-                                    "color": "#00CFFF",
+                                    "color": "#046B99",
                                   },
                                 ]
                               }
@@ -301,7 +301,7 @@ exports[`App should render with all providers and navigation 1`] = `
                                     "textAlign": "center",
                                   },
                                   Object {
-                                    "color": "#00CFFF",
+                                    "color": "#046B99",
                                   },
                                 ]
                               }
@@ -413,7 +413,7 @@ exports[`App should render with all providers and navigation 1`] = `
                   onLayout={[Function]}
                   style={
                     Object {
-                      "color": "#FFF",
+                      "color": "#000",
                       "fontSize": 17,
                       "fontWeight": "bold",
                     }

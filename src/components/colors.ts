@@ -1,11 +1,11 @@
 import { StyleSheet } from 'react-native'
 
 const darkBackgroundColor = '#1C304A'
-const darkPrimaryButtonColor = '#046B99'
-const darkTextPrimaryColor = '#000'
+const darkPrimaryButtonColor = '#00CFFF'
+const darkTextPrimaryColor = '#FFF'
 const lightBackgroundColor = '#B3EFFF'
-const lightPrimaryButtonColor = '#00CFFF'
-const lightTextPrimaryColor = '#FFF'
+const lightPrimaryButtonColor = '#046B99'
+const lightTextPrimaryColor = '#000'
 
 const styles = StyleSheet.create({
   darkBackground: {

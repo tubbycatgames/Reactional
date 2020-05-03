@@ -18,7 +18,7 @@ exports[`Game should render 1`] = `
     style={
       Array [
         Object {
-          "color": "#FFF",
+          "color": "#000",
         },
         undefined,
       ]
@@ -63,7 +63,7 @@ exports[`Game should render 1`] = `
               "textAlign": "center",
             },
             Object {
-              "color": "#00CFFF",
+              "color": "#046B99",
             },
           ]
         }
