@@ -353,7 +353,7 @@ exports[`App should render with all providers and navigation 1`] = `
             <View
               style={
                 Object {
-                  "backgroundColor": "#B3EFFF",
+                  "backgroundColor": "#00CFFF",
                   "borderBottomColor": "rgb(224, 224, 224)",
                   "flex": 1,
                   "shadowColor": "rgb(224, 224, 224)",
@@ -413,7 +413,7 @@ exports[`App should render with all providers and navigation 1`] = `
                   onLayout={[Function]}
                   style={
                     Object {
-                      "color": "#000",
+                      "color": "#046B99",
                       "fontSize": 17,
                       "fontWeight": "bold",
                     }

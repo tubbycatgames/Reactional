@@ -6,14 +6,17 @@ import { createStackNavigator } from '@react-navigation/stack'
 import GameScreen from './screens/game'
 import MenuScreen from './screens/menu'
 import SwipeScreen from './screens/swipe'
-import { getPrimaryTextColor, getBackgroundStyle } from './components/colors'
+import {
+  getHeaderBackgroundStyle,
+  getPrimaryTextColor,
+} from './components/colors'
 
 const Stack = createStackNavigator()
 
 export const App = () => {
   const colorScheme = useColorScheme()
   const screenOptions = {
-    headerStyle: getBackgroundStyle(colorScheme),
+    headerStyle: getHeaderBackgroundStyle(colorScheme),
     headerTintColor: getPrimaryTextColor(colorScheme),
     headerTitleStyle: {
       fontWeight: 'bold',

@@ -11,11 +11,17 @@ const styles = StyleSheet.create({
   darkBackground: {
     backgroundColor: dark,
   },
+  darkHeaderBackground: {
+    backgroundColor: medium,
+  },
   darkTextPrimary: {
     color: white,
   },
   lightBackground: {
     backgroundColor: light,
+  },
+  lightHeaderBackground: {
+    backgroundColor: bright,
   },
   lightTextPrimary: {
     color: black,
@@ -30,12 +36,16 @@ export const getBackgroundStyle = getSchemeValue(
   styles.darkBackground,
   styles.lightBackground
 )
-export const getBackgroundColor = getSchemeValue(dark, light)
+
+export const getHeaderBackgroundStyle = getSchemeValue(
+  styles.darkHeaderBackground,
+  styles.lightHeaderBackground
+)
 
 export const getPrimaryTextStyle = getSchemeValue(
   styles.darkTextPrimary,
   styles.lightTextPrimary
 )
-export const getPrimaryTextColor = getSchemeValue(white, black)
+export const getPrimaryTextColor = getSchemeValue(bright, medium)
 
 export const getPrimaryButtonColor = getSchemeValue(bright, medium)
