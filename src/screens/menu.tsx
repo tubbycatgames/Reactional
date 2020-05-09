@@ -3,8 +3,8 @@ import React from 'react'
 import { SchemeText, SchemePrimaryButton } from '../components/schemed'
 import { t } from '../utils/localization'
 
-import GameScreen from './game'
-import SwipeScreen from './swipe'
+import { GameScreenName, SwipeScreenName } from '../consts'
+
 import { ScreenView } from './view'
 
 const MenuScreen = ({ navigation }: any) => (
@@ -14,17 +14,15 @@ const MenuScreen = ({ navigation }: any) => (
     <SchemeText>{t('purpose')}</SchemeText>
     <SchemePrimaryButton
       accessibilityLabel={t('buttons.play.label')}
-      onPress={() => navigation.navigate(GameScreen.screenName)}
+      onPress={() => navigation.navigate(GameScreenName)}
       title={t('buttons.play.title')}
     />
     <SchemePrimaryButton
       accessibilityLabel={t('buttons.swipe.label')}
-      onPress={() => navigation.navigate(SwipeScreen.screenName)}
+      onPress={() => navigation.navigate(SwipeScreenName)}
       title={t('buttons.swipe.title')}
     />
   </ScreenView>
 )
-
-MenuScreen.screenName = 'Menu'
 
 export default MenuScreen

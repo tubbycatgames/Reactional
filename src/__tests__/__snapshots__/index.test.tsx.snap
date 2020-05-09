@@ -413,7 +413,7 @@ exports[`App should render with all providers and navigation 1`] = `
                   onLayout={[Function]}
                   style={
                     Object {
-                      "color": "#046B99",
+                      "color": "#000",
                       "fontSize": 17,
                       "fontWeight": "bold",
                     }

@@ -10,6 +10,7 @@ import {
   getHeaderBackgroundStyle,
   getPrimaryTextColor,
 } from './components/colors'
+import { MenuScreenName, GameScreenName, SwipeScreenName } from './consts'
 
 const Stack = createStackNavigator()
 
@@ -27,9 +28,9 @@ export const App = () => {
     <AppearanceProvider>
       <NavigationContainer>
         <Stack.Navigator screenOptions={screenOptions}>
-          <Stack.Screen name={MenuScreen.screenName} component={MenuScreen} />
-          <Stack.Screen name={GameScreen.screenName} component={GameScreen} />
-          <Stack.Screen name={SwipeScreen.screenName} component={SwipeScreen} />
+          <Stack.Screen name={MenuScreenName} component={MenuScreen} />
+          <Stack.Screen name={GameScreenName} component={GameScreen} />
+          <Stack.Screen name={SwipeScreenName} component={SwipeScreen} />
         </Stack.Navigator>
       </NavigationContainer>
     </AppearanceProvider>

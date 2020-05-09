@@ -46,6 +46,6 @@ export const getPrimaryTextStyle = getSchemeValue(
   styles.darkTextPrimary,
   styles.lightTextPrimary
 )
-export const getPrimaryTextColor = getSchemeValue(bright, medium)
+export const getPrimaryTextColor = getSchemeValue(white, black)
 
 export const getPrimaryButtonColor = getSchemeValue(bright, medium)

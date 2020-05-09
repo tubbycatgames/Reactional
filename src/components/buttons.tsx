@@ -1,6 +1,6 @@
 import React from 'react'
 
-import MenuScreen from '../screens/menu'
+import { MenuScreenName } from '../consts'
 import { t } from '../utils/localization'
 
 import { SchemePrimaryButton } from './schemed'
@@ -8,7 +8,7 @@ import { SchemePrimaryButton } from './schemed'
 export const MenuButton = ({ navigate }: any) => (
   <SchemePrimaryButton
     accessibilityLabel={t('buttons.menu.label')}
-    onPress={() => navigate(MenuScreen.screenName)}
+    onPress={() => navigate(MenuScreenName)}
     title={t('buttons.menu.title')}
   />
 )
