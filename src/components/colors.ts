@@ -1,24 +1,24 @@
 import { StyleSheet } from 'react-native'
 
-const darkBackgroundColor = '#1C304A'
-const darkPrimaryButtonColor = '#00CFFF'
-const darkTextPrimaryColor = '#FFF'
-const lightBackgroundColor = '#B3EFFF'
-const lightPrimaryButtonColor = '#046B99'
-const lightTextPrimaryColor = '#000'
+const white = '#FFF'
+const light = '#B3EFFF'
+const bright = '#00CFFF'
+const medium = '#046B99'
+const dark = '#1C304A'
+const black = '#000'
 
 const styles = StyleSheet.create({
   darkBackground: {
-    backgroundColor: darkBackgroundColor,
+    backgroundColor: dark,
   },
   darkTextPrimary: {
-    color: darkTextPrimaryColor,
+    color: white,
   },
   lightBackground: {
-    backgroundColor: lightBackgroundColor,
+    backgroundColor: light,
   },
   lightTextPrimary: {
-    color: lightTextPrimaryColor,
+    color: black,
   },
 })
 
@@ -30,21 +30,12 @@ export const getBackgroundStyle = getSchemeValue(
   styles.darkBackground,
   styles.lightBackground
 )
-export const getBackgroundColor = getSchemeValue(
-  darkBackgroundColor,
-  lightBackgroundColor
-)
+export const getBackgroundColor = getSchemeValue(dark, light)
 
 export const getPrimaryTextStyle = getSchemeValue(
   styles.darkTextPrimary,
   styles.lightTextPrimary
 )
-export const getPrimaryTextColor = getSchemeValue(
-  darkTextPrimaryColor,
-  lightTextPrimaryColor
-)
+export const getPrimaryTextColor = getSchemeValue(white, black)
 
-export const getPrimaryButtonColor = getSchemeValue(
-  darkPrimaryButtonColor,
-  lightPrimaryButtonColor
-)
+export const getPrimaryButtonColor = getSchemeValue(bright, medium)
