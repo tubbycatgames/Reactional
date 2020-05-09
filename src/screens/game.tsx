@@ -1,14 +1,12 @@
 import React from 'react'
 
-import { MenuButton } from '../components/buttons'
 import { SchemeText } from '../components/schemed'
 
 import { ScreenView } from './view'
 
-const GameScreen = ({ navigation }: any) => (
+const GameScreen = () => (
   <ScreenView>
     <SchemeText>In Progress!</SchemeText>
-    <MenuButton navigate={navigation.navigate} />
   </ScreenView>
 )
 

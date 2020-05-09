@@ -1,18 +1,24 @@
 import React from 'react'
 import { Alert, StyleSheet, View } from 'react-native'
 
-import { MenuButton } from '../components/buttons'
 import { SwipeBoard } from '../components/boards'
 
 import { ScreenView } from './view'
 
-const SwipeScreen = ({ navigation }: any) => {
+const SwipeScreen = () => {
+  const swipeEvent = (direction: string) => () =>
+    Alert.alert(`Swipped ${direction}!`)
+
   return (
     <ScreenView>
-      <SwipeBoard onUp={() => Alert.alert('Swipped Up!')}>
+      <SwipeBoard
+        onDown={swipeEvent('Down')}
+        onLeft={swipeEvent('Left')}
+        onRight={swipeEvent('Right')}
+        onUp={swipeEvent('Up')}
+      >
         <View style={styles.container} />
       </SwipeBoard>
-      <MenuButton navigate={navigation.navigate} />
     </ScreenView>
   )
 }

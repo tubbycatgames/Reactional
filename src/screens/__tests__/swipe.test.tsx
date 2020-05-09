@@ -5,8 +5,7 @@ import Swipe from '../swipe'
 
 describe('Swipe', () => {
   it('should render', () => {
-    const navigation = { goBack: () => {} }
-    const render = renderer.create(<Swipe navigation={navigation} />)
+    const render = renderer.create(<Swipe />)
     expect(render.toJSON()).toMatchSnapshot()
   })
 })
