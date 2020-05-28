@@ -1,36 +1,38 @@
-import { PromptResponse, prompt } from '../prompt'
+import { ResponseType, prompt } from '../prompt'
 
 const successful = 'expected'
-const testTimeout = 100
+const timeout = 20
 const testPrompt = (
   action: Promise<string>,
-  expected: PromptResponse
+  expected: ResponseType
 ) => async () => {
-  const promptResponse = await prompt(action, successful, testTimeout)
-  expect(promptResponse).toBe(expected)
+  const promptResponse = await prompt(action, successful, timeout)
+  expect(promptResponse.type).toBe(expected)
+  expect(promptResponse.time).toBeGreaterThanOrEqual(0)
+  expect(promptResponse.time).toBeLessThanOrEqual(timeout)
 }
 
 describe('prompt', () => {
   it(
-    'should prompt an action and return successful if expected matches',
-    testPrompt(Promise.resolve(successful), PromptResponse.Success)
+    'should return successful if action response equals the expection',
+    testPrompt(Promise.resolve(successful), ResponseType.Success)
   )
 
   it(
-    'should prompt an action and return failure if expected doesnt match',
-    testPrompt(Promise.resolve('unexpected'), PromptResponse.Failure)
+    'should return failure if action response doesnt match the expection',
+    testPrompt(Promise.resolve('unexpected'), ResponseType.Failure)
   )
 
   it(
-    'should prompt an action and return failure if action is rejected',
-    testPrompt(Promise.reject('uhoh'), PromptResponse.Failure)
+    'should return failure if action is rejected',
+    testPrompt(Promise.reject('uhoh'), ResponseType.Failure)
   )
 
   it(
-    'should prompt an action and return timeout if action is incomplete',
+    'should return timeout if action is incomplete',
     testPrompt(
-      new Promise((r, reject) => setTimeout(reject, testTimeout * 2)),
-      PromptResponse.Timeout
+      new Promise((r, rej) => setTimeout(rej, timeout * 2)),
+      ResponseType.Timeout
     )
   )
 })

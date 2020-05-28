@@ -1,7 +1,12 @@
-export enum PromptResponse {
+export enum ResponseType {
   Failure,
   Success,
   Timeout,
+}
+
+interface PromptResponse {
+  time: number
+  type: ResponseType
 }
 
 export const prompt = async <T>(
@@ -11,19 +16,27 @@ export const prompt = async <T>(
 ) => {
   return new Promise<PromptResponse>(async (resolve) => {
     const timer = setTimeout(() => {
-      resolve(PromptResponse.Timeout)
+      resolve({
+        time: timeout,
+        type: ResponseType.Timeout,
+      })
     }, timeout)
 
+    const start = Date.now()
+
+    let resultType = ResponseType.Failure
     try {
       const result = await action
-      clearTimeout(timer)
-      if (result == expected) {
-        resolve(PromptResponse.Success)
-      } else {
-        resolve(PromptResponse.Failure)
+      if (result === expected) {
+        resultType = ResponseType.Success
       }
-    } catch (ex) {
-      resolve(PromptResponse.Failure)
-    }
+    } catch (ex) {}
+
+    clearTimeout(timer)
+
+    resolve({
+      time: Date.now() - start,
+      type: resultType,
+    })
   })
 }
