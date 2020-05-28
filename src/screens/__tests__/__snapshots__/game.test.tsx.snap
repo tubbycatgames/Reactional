@@ -14,17 +14,43 @@ exports[`Game should render 1`] = `
     ]
   }
 >
-  <Text
+  <View
+    collapsable={false}
+    onGestureHandlerEvent={[Function]}
+    onGestureHandlerStateChange={[Function]}
     style={
-      Array [
-        Object {
-          "color": "#000",
-        },
-        undefined,
-      ]
+      Object {
+        "flex": 1,
+        "height": "100%",
+      }
     }
   >
-    In Progress!
-  </Text>
+    <Text
+      style={
+        Array [
+          Object {
+            "color": "#000",
+          },
+          undefined,
+        ]
+      }
+    >
+      Type: 
+      -1
+    </Text>
+    <Text
+      style={
+        Array [
+          Object {
+            "color": "#000",
+          },
+          undefined,
+        ]
+      }
+    >
+      Time: 
+      -1
+    </Text>
+  </View>
 </View>
 `;
