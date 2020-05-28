@@ -2,10 +2,11 @@ import React, { Component } from 'react'
 import { StyleSheet, View } from 'react-native'
 
 import { ResponseType, prompt } from '../utils/prompt'
-import { SchemeText } from '../components/schemed'
+import { SchemeText, SchemePrimaryButton } from '../components/schemed'
 import { SwipeBoard } from '../components/boards'
 
 import { ScreenView } from './view'
+import { t } from 'i18n-js'
 
 interface Props {
   goal: string
@@ -34,19 +35,31 @@ export default class GameScreen extends Component<Props, State> {
     this.state.resolve(direction)
   }
 
-  async componentDidMount() {
-    const testPrompt = await prompt(
-      new Promise((resolve) => {
-        this.setState({ resolve })
-      }),
-      this.props.goal,
-      this.props.timeout
-    )
+  startGame = () => {
+    this.setState(
+      {
+        time: -1,
+        type: -1,
+      },
+      async () => {
+        const testPrompt = await prompt(
+          new Promise((resolve) => {
+            this.setState({ resolve })
+          }),
+          this.props.goal,
+          this.props.timeout
+        )
 
-    this.setState({
-      time: testPrompt.time,
-      type: testPrompt.type,
-    })
+        this.setState({
+          time: testPrompt.time,
+          type: testPrompt.type,
+        })
+      }
+    )
+  }
+
+  componentDidMount() {
+    this.startGame()
   }
 
   render() {
@@ -63,6 +76,11 @@ export default class GameScreen extends Component<Props, State> {
             <SchemeText>Time: {this.state.time}</SchemeText>
           </View>
         </SwipeBoard>
+        <SchemePrimaryButton
+          accessibilityLabel={t('buttons.game.replay.label')}
+          onPress={this.startGame}
+          title={t('buttons.game.replay.title')}
+        />
       </ScreenView>
     )
   }

@@ -6,6 +6,12 @@ i18n.fallbacks = true
 i18n.translations = {
   en: {
     buttons: {
+      game: {
+        replay: {
+          label: 'Click to restart the Game',
+          title: 'Play Again',
+        },
+      },
       menu: {
         label: 'Click to return to the Menu',
         title: 'Menu',

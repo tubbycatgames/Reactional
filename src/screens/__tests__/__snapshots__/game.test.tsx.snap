@@ -52,5 +52,51 @@ exports[`Game should render 1`] = `
       -1
     </Text>
   </View>
+  <View
+    accessibilityLabel="[missing \\"en.buttons.game.replay.label\\" translation]"
+    accessibilityRole="button"
+    accessibilityStates={Array []}
+    accessible={true}
+    focusable={true}
+    isTVSelectable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "opacity": 1,
+      }
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {},
+        ]
+      }
+    >
+      <Text
+        style={
+          Array [
+            Object {
+              "color": "#007AFF",
+              "fontSize": 18,
+              "padding": 8,
+              "textAlign": "center",
+            },
+            Object {
+              "color": "#046B99",
+            },
+          ]
+        }
+      >
+        [missing "en.buttons.game.replay.title" translation]
+      </Text>
+    </View>
+  </View>
 </View>
 `;
