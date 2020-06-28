@@ -1,7 +1,7 @@
 import { ResponseType, prompt } from '../prompt'
 
 const successful = 'expected'
-const timeout = 20
+const timeout = 100
 const testPrompt = (
   action: Promise<string>,
   expected: ResponseType
